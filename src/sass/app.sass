@@ -1,0 +1,1168 @@
+// html
+//   max-height: 100%
+
+// body
+//   height: 100%
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div::-webkit-scrollbar,
+thead::-webkit-scrollbar,
+tbody::-webkit-scrollbar,
+tr::-webkit-scrollbar
+  width: 8px !important
+  height: 8px !important
+  border-radius: 8px !important
+
+.counting-box
+  padding: 1em
+  border: 0.25em solid #82B1FF
+  position: relative
+  &::before, &::after
+    content: ''
+    display: block
+    position: absolute
+    background: #fff
+  &::before
+    top: -0.3em
+    bottom: -0.3em
+    left: 0.25em
+    right: 0.25em
+  &::after
+    left: -0.3em
+    right: -0.3em
+    top: 0.25em
+    bottom: 0.25em
+.counting-box .heading,
+.counting-circle .heading,
+.counting-hexagon .heading
+  line-height: 1
+  position: relative
+  z-index: 8
+.category-producte__counting-box,
+.category-products__counting-circle
+  width: 16px !important
+  height: 16px !important
+  border-width: 0.15em !important
+.counting-circle
+  width: 25px
+  height: 25px
+  border-radius: 50%
+  border: 4px dotted #9E9E9E
+  .heading
+  line-height: 1
+  position: relative
+  z-index: 1
+.counting-hexagon
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 16px 
+  height: 9.24px
+  background-color: #ffffff
+  margin: 4.62px 0
+  border-left: solid 2px #BDBDBD
+  border-right: solid 2px #BDBDBD
+.counting-hexagon:before,
+.counting-hexagon:after
+  content: ""
+  position: absolute
+  z-index: 1
+  width: 11.31px
+  height: 11.31px
+  -webkit-transform: scaleY(0.5774) rotate(-45deg)
+  -ms-transform: scaleY(0.5774) rotate(-45deg)
+  transform: scaleY(0.5774) rotate(-45deg)
+  background-color: inherit
+  left: 0.3431px
+.counting-hexagon:before
+  top: -5.6569px
+  border-top: solid 2.8284px #BDBDBD
+  border-right: solid 2.8284px #BDBDBD
+.counting-hexagon:after
+  bottom: -5.6569px
+  border-bottom: solid 2.8284px #BDBDBD
+  border-left: solid 2.8284px #BDBDBD
+.v-main 
+  padding-left: 70px !important
+.filters-expansion-panel:hover .v-expnsion-panel-header
+  background: #82B1FF !important
+
+.filters-expansion-panel:hover .v-expansion-panel-content
+  background: #B9D2EA !important
+
+.filters-expansion-panel .v-expansion-panel-content__wrap
+  padding: 0 5px
+
+.filters-expansion-panel .v-expansion-panel-content__wrap label, .filters-expansion-panel .v-expansion-panel-header label
+  color: black !important
+
+.v-input.dir-rtl .v-label
+  right: 0 !important
+  left: auto !important
+  transform-origin: top right
+
+.v-input.dense-input .v-label.v-label--active
+  top: 10px !important
+
+.v-dialog
+  overflow-y: visible !important
+
+.dialog-action-button
+  background: #B9D2EA !important
+
+.dialog-action-button:hover
+  background: #64B5F6 !important
+.light-box
+  height: 100%
+.light-box .images-wrapper 
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center 
+  align-items: center
+  margin: 0 auto
+.light-box img.image
+  max-width: 100%
+  width: auto
+  max-height: 100%
+
+.warranty-select.v-select .v-select__selection
+  color: #FBB03B
+
+.offer-date input[type=date]
+  width: 80px
+  // font-size: 12px
+
+.vue-full-screen-file-drop
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10000
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,.4)
+  visibility: hidden
+  opacity: 0
+  transition: visibility .2s,opacity .2s
+
+.drag-slider .v-slider
+  // height: 50vh
+  // min-height: 50vh
+  width: 60px
+  min-height: 85vh
+  height: 85vh
+
+.responsive-input.v-input input
+  max-height: inherit
+.v-expansion-panel--active > .v-expansion-panel-header
+  min-height: 24px !important
+.v-data-table
+  .v-data-table__wrapper
+    table 
+      thead.v-data-table-header
+        background: white !important
+
+        th 
+          padding: 0 !important
+          padding-left: 2.25px !important
+          color: #666666
+          height: 56.5px
+          line-height: 16.2px
+          box-shadow: none !important
+          background-color: white !important
+          box-sizing: content-box
+          border-bottom: 4.5px solid transparent !important
+
+          > span, > div 
+            background-color: #CCE3FF
+            width: 100%
+            border-radius: 2.5px
+            font-size: 13.5px
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 100%
+          > span.text-left, > div.text-left 
+            justify-content: flex-start
+            padding-left: 15px
+          > span.text-end, > div.text-end 
+            justify-content: flex-end
+            padding-right: 15px
+
+          .column 
+            width: 100%
+            flex-direction: column !important
+            display: flex
+            .justify-center
+              align-self: center
+              padding-right: 0 !important
+            .justify-start
+              align-self: flex-start
+              padding-left: 15px !important
+            .justify-end
+              align-self: flex-end
+              padding-right: 15px !important
+          .text-left.column 
+            align-items: flex-start
+          .text-right.column
+            align-items: flex-end
+            > div 
+              padding-right: 15px
+        th:first-child 
+          max-width: 26px
+          width: 26px
+          flex-shrink: 0 !important
+          padding: 0 !important
+          box-sizing: border-box
+          background-color: white !important
+
+          .v-input--selection-controls__input
+            margin: 0
+
+          > div 
+            background-color: #CCE3FF
+            width: 100%
+            border-radius: 2.5px
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 100%
+      tbody 
+        tr 
+          border-radius: 3px
+          overflow: hidden
+
+          td 
+            height: 57px
+            box-sizing: content-box
+            padding: 0 !important
+            border-bottom: 3.7px solid white !important
+
+            span 
+              color: #424242
+              font-size: 16.5px
+              line-height: 19.8px
+          td.text-end 
+            padding-right: 15px
+          td:not(.text-end) .text-end 
+            padding-right: 15px
+          td.text-start
+            padding-left: 15px
+            
+          td:not(.text-start) .text-start
+            padding-left: 15px
+          
+          td:first-child 
+            max-width: 26px
+            width: 26px
+            flex-shrink: 0 !important
+            padding: 0 !important
+            box-sizing: border-box
+
+            >div 
+              display: flex
+              align-items: center
+              justify-content: center
+
+            .v-input--selection-controls__input 
+              margin: 0
+
+        tr:nth-child(odd) 
+          background-color: #E3F2FD !important
+
+        tr:nth-child(even) 
+          background-color: #EEEEEE !important
+
+        tr:nth-child(odd):hover 
+          background-color: #BBDEFB !important
+
+        tr:nth-child(even):hover 
+          background-color: #E0E0E0 !important
+
+        tr:last-child 
+          td 
+            border-bottom: 0 !important
+
+        tr.odd-item
+          background-color: #E3F2FD !important
+
+        tr.even-item
+          background-color: #EEEEEE !important
+
+        tr.odd-item:hover 
+          background-color: #BBDEFB !important
+
+        tr.even-item:hover 
+          background-color: #E0E0E0 !important
+.v-application
+  .rounded 
+    border-radius: 3px !important
+  .mt-1 
+    margin-top: 4.5px !important
+  .pa-1
+    padding: 4.5px !important
+  .px-1
+    padding-right: 4.5px !important
+    padding-left: 4.5px !important
+  .ml-1 
+    margin-left: 4.5px !important
+  .ml-01 
+    margin-left: 1.6px !important
+  .mt-2
+    margin-top: 6.4px !important
+.app-wrapper
+  margin: 4.5px !important
+  
+  .app-inner-wrapper
+    padding: 4.5px !important
+
+.parsers 
+  .v-data-table 
+    height: 100%
+
+
+.v-data-table 
+  box-shadow: none !important
+
+  .v-data-table__wrapper 
+    // max-height: calc(100vh - 65.5px)
+    overflow-y: auto
+
+  .v-icon__svg 
+    height: 15.4692px
+    width: 15.4692px
+  .table-actions 
+    display: flex
+    align-items: center
+    justify-content: center
+    button 
+      margin-right: 0 !important
+
+  .v-input--switch--inset 
+    margin: 0
+    padding: 0
+    width: fit-content
+    height: auto
+    .v-messages 
+      display: none
+    .v-input__slot 
+      margin-bottom: 0
+      margin-right: 12.5px
+      input 
+        width: 32.1045px
+        height: 17.0865px
+      .v-input--selection-controls__input 
+        width: auto
+        height: auto
+        margin-right: 0
+        .v-input--selection-controls__ripple 
+          width: 12px
+          height: 12px
+          left: -4.1px
+          top: calc(50% - 13.5px)
+
+        .v-input--switch__track
+          border: 2.1px solid #9E9E9E
+          opacity: 1
+          width: 32.1px
+          position: static
+          margin: 0
+          height: 17px
+          background-color: transparent
+          box-sizing: border-box
+
+        .v-input--switch__thumb 
+          color: #9E9E9E
+          width: 8px
+          left: 4.5px
+          position: absolute
+          top: calc(50% - 4.5px)
+          height: 8px
+      
+  .v-input--is-dirty.v-input--switch--inset 
+
+    .v-input--selection-controls__ripple,
+    .v-input--switch__thumb 
+      transform: translate(15.04px, 0) !important
+    
+
+    .v-input--switch__track.primary--text 
+      border: 2.1px solid #2979FF
+    
+
+    .v-input--switch__thumb.primary--text 
+      color: #2979FF
+
+.v-data-table__wrapper 
+  height: 100%
+
+
+::-webkit-scrollbar 
+  width: 19.02px
+  padding: 1.83px
+  border-radius: 3px
+
+
+::-webkit-scrollbar-track 
+  padding: 1.83px
+  box-shadow: inset 4.5px 0 0 0 white
+  background-color: #EEEEEE
+
+::-webkit-scrollbar-thumb 
+  border-radius: 3px
+  box-shadow: inset 4.5px 0 0 0 white
+  background-color: #BDBDBD
+
+
+.v-dialog > .v-card > .v-card__text
+  padding: 0
+  border-radius: 3px
+  .container
+    border-radius: 3px
+
+.offers-note .v-input
+    margin-top: 0
+    padding-top: 0
+    .v-input__slot
+      margin-bottom: 0 !important
+    .v-text-field__details 
+      display: none
+
+.model-header 
+
+  .inp-form 
+    padding: 4.5px !important
+    box-sizing: border-box
+    margin-bottom: 0
+    height: 38px
+    .v-input 
+      margin-top: 0
+      input
+      .v-label
+        transition: all .2s linear
+        top: 4px
+      .v-label.v-label--active
+        font-size: 12px
+        top: 12px !important
+  button.inp-form
+    height: 38px !important
+    border-radius: 3px
+    padding: 0 !important
+    display: flex
+    justify-content: center
+    width: 169px !important
+    max-width: 169px
+    margin-right: 12px !important
+    align-items: center
+    text-transform: capitalize
+    box-shadow: none
+    font-size: 16px
+    margin-bottom: 0 !important
+
+
+.v-menu__content 
+  padding: 4.5px
+  box-sizing: content-box
+  background-color: white
+  transform: translateX(-4.5px)
+  .v-list 
+    padding: 4.5px 0
+    padding-bottom: 0
+    .v-list-item  
+      border-radius: 3px
+      overflow: hidden
+
+
+.tree-node.open
+  position: relative
+
+  .tree-node-inner 
+    z-index: 2
+    position: relative
+    box-shadow: none
+    padding: 1.6px
+    .category-tree-container
+      // border: 0 !important
+
+    
+  .tree-node-children
+    position: relative
+    padding-bottom: 1.6px
+    .tree-node-inner 
+      padding: 0
+      margin-top: 6.4px
+      margin-right: 1.6px
+
+    .tree-node
+      position: relative
+    .tree-node::after
+      content: ""
+      position: absolute
+      left: 18px
+      width: 50%
+      background: blue
+      height: 1px
+      top: 17px
+
+  .tree-node-children::after
+    position: absolute
+    content: ""
+    left: 18px
+    z-index: 1
+    background: blue
+    width: 1px
+    height: calc(100% - 9px)
+    top: -9px
+    
+.tree 
+  margin-top: -6.4px
+  > .tree-node 
+    margin-top: 0 !important
+  .category-tree-container
+    overflow: hidden
+    .category-tree-item 
+      max-height: unset !important
+    .v-list-item__avatar 
+      // height: 44px !important
+    
+.tree-node 
+  margin-top: 6.4px
+
+.tree-node:not(.open) 
+  margin-bottom: 0 !important
+  .tree-node-inner 
+    padding: 0
+
+.v-expansion-panel 
+  border: 2px solid #B9D2EA
+  margin-top: 0 !important
+  border-radius: 3px
+  overflow: hidden
+  margin-bottom: 6.4px !important
+  > .v-expansion-panel-header
+    min-height: 24px
+    border: 0 !important
+    border-radius: 3px
+  .v-expansion-panel-content 
+    padding-top: 4.5px !important
+  .v-expansion-panel-content__wrap 
+    padding: 0
+    .v-input:hover
+      background-color: #CCE3FF
+      border-radius: 3px
+
+.v-expansion-panel--active 
+  > .v-expansion-panel-header
+    border: 0 !important
+    border-radius: 3px
+    min-height: 24px
+.offer-form 
+  nav
+    height: unset !important
+  .offer-data
+    .px-1 
+      padding: 4.7px !important
+      .v-input 
+        margin-top: 0
+    .v-btn i 
+      font-size: 21px !important
+
+.assemblies
+  .v-toolbar__title
+    width: 250px
+.assembly-sublogo 
+  color: #808080
+  font-size: 12px
+.noteMenu 
+  border: 43px solid !important
+
+.assemblies-category-list
+  font-size: 14px
+  padding: 4.5px 0 !important
+  .v-list-item 
+    padding: 0
+    margin-top: 4.5px
+    min-height: unset
+    > div 
+      min-width: 200px
+      padding: 4.5px 
+    >div:hover 
+      background-color: #EEEEEE
+      cursor: pointer
+      border-radius: 3px
+  .v-list-item:first-child 
+    margin-top: 0
+
+.v-input--selection-controls__ripple
+  width: 20px
+  height: 20px
+  top: calc(50% - 17px)
+  left: -5px
+
+.assemblies-menu-btn 
+  background-color: transparent !important
+  .v-icon 
+    color: #666666 !important
+    font-size: 20px !important
+.text-gray
+  color: #666666 !important
+.text-blue
+  color: #2979FF !important
+.text-green
+  color: #117f1b !important
+.text-green-light
+  color: #39B54A !important
+.text-vendor
+  color: #69D169 !important
+.bordered-both
+  border-left: 1px solid lightgrey !important
+  border-right: 1px solid lightgrey !important
+.bordered-right
+  border-right: 1px solid lightgrey !important
+.bordered-left
+  border-left: 1px solid lightgrey !important
+.bordered-bottom
+  border-bottom: 1px solid lightgrey !important
+.bordered-both-white
+  border-left: 1px solid #fff !important
+  border-right: 1px solid #fff !important
+.bordered-right-white
+  border-right: 1px solid #fff !important
+.bordered-left-white
+  border-left: 1px solid #fff !important
+.bordered-bottom-white
+  border-bottom: 1px solid #fff !important
+.font-8
+  font-size: 8px !important
+  line-height: 8px !important
+.font-10
+  font-size: 10px !important
+  line-height: 10px !important
+.font-12
+  font-size: 12px !important
+  line-height: 15px !important
+.font-13
+  font-size: 13.5px !important
+  line-height: 16px !important
+.font-14
+  font-size: 14px !important
+.font-16
+  font-size: 16px !important
+.font-22
+  font-size: 22px !important
+.category-products__sorting-indicator 
+  width: 20px !important
+.category-products__sorting-indicator_small
+  font-size: 10px !important
+  display: -webkit-box !important
+  -webkit-line-clamp: 1 !important
+  -webkit-box-orient: vertical !important
+  overflow: hidden !important
+  text-overflow: ellipsis !important
+  line-height: 10px
+.category-products__sorting-indicator_small .v-icon
+  font-size: 10px !important
+  margin: 0 !important
+.line-break-one
+  display: -webkit-box !important
+  -webkit-line-clamp: 1 !important
+  -webkit-box-orient: vertical !important
+  overflow: hidden !important
+  text-overflow: ellipsis !important
+.line-break-two
+  display: -webkit-box !important
+  -webkit-line-clamp: 2 !important
+  -webkit-box-orient: vertical !important
+  overflow: hidden !important
+  text-overflow: ellipsis !important
+.category-products__dense-input .v-text-field__slot 
+  height: 30px !important
+.category-products__dense-input input
+  font-size: 14px !important
+  padding: 0 !important
+  padding-top: 14px !important
+.category-products__dense-select .v-input__icon
+  margin-top: 4px !important
+.category-products__dense-select .v-select__selection
+  margin: 0 !important
+.category-products__dense-select .v-select__selections
+  height: 30px !important
+  padding-top: 13px !important
+  font-size: 14px !important
+.category-products__dense-select input
+  padding: 0 !important
+.category-products-top-row th,
+.offers-products__wrapper th,
+.offers-products__group th
+  height: 40px !important
+.category-products-top-row td:first-child 
+  padding: 0 12px !important
+.category-products__tooltip
+  height: 24px !important
+.category-products__tooltip-buttons
+  width: 16px !important
+  height: 16px !important
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+  margin: 0 !important
+  margin-right: 4px !important
+  background: transparent !important
+.category-products__tooltip-buttons .v-icon
+  width: 100% !important
+  height: 100% !important
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+  font-size: 16px !important
+.category-products__tooltip-menu .v-icon
+  font-size: 20px !important
+.category-products__tooltip-col
+  height: 100% !important
+.category-products__tooltip-input .v-icon
+  font-size: 14px !important
+.category-products__tooltip-input .v-input__prepend-inner
+  width: 18px !important
+  height: 18px !important
+  position: absolute !important
+  top: 0 !important
+  left: 6px !important
+  margin: 0 !important
+  padding: 0 !important
+.category-products__tooltip-input .v-input__icon
+  min-width: auto !important
+  width: 100% !important
+  height: 100% !important
+.category-products__tooltip-search,
+.category-products__tooltip-reset
+  height: 18px !important
+  font-size: 8px !important
+  margin-bottom: 0 !important
+.category-products__tooltip-reset
+  border-color: #117f1b !important
+.category-form__categories
+  width: 220px
+  flex-grow: unset !important
+  flex-shrink: 0 !important
+  flex-basis: unset !important
+.category-form__categories .category-tree-container
+  height: 26px !important
+.category-form__categories .tree-node-inner-back,
+.category-form__categories .v-list-item__avatar,
+.category-form__categories .tree-node-inner,
+.category-form__categories .category-tree-item,
+.category-form__categories .v-list-item__title,
+.category-form__categories .v-list-item__title>div
+  min-height: auto !important
+  height: 22px !important
+.category-form__categories .v-list-item__avatar
+  min-width: auto !important
+  width: 22px !important
+.category-form__categories .v-list-item__title
+  font-size: 13px !important
+.category-form__categories .v-icon.v-icon
+  font-size: 18px !important
+.category-form__content
+  width: 100%
+  flex-grow: unset !important
+  flex-basis: unset !important
+  overflow: hidden
+  overflow-x: auto
+.category-form__properties
+  width: 170px
+  flex-grow: unset !important
+  flex-shrink: 0 !important
+  flex-basis: unset !important
+  padding-right: 4.5px !important
+.category-form__properties label
+  font-size: 10px !important
+  margin-right: 4.5px !important
+.category-form__properties .v-item-group::-webkit-scrollbar
+  display: none !important
+.category-products__fields
+  width: 220px
+  flex-grow: unset !important
+  flex-shrink: 0 !important
+  flex-basis: unset !important
+.category-products__fields-textField
+  height: 32px !important
+  flex-basis: unset !important
+  flex-grow: unset !important
+  padding: 0 4.5px !important
+  overflow: hidden !important
+  .v-btn i
+    font-size: 21px !important
+.category-products__fields-textField .v-text-field__slot,
+.category-products__fields-textField .v-select__slot
+  padding-top: 6px !important
+.category-products__fields-textField .v-input__control,
+.category-products__fields-textField .v-input__slot
+  height: 100% !important
+.category-products__fields-textField .v-input__control .v-input__append-inner
+  margin-top: 7px !important
+.category-products__fields-textField .v-input__icon
+  min-width: auto !important
+  width: 12px !important
+  height: 12px !important
+  margin-left: 4px !important
+.category-products__fields-textField .v-icon__svg
+  width: 14px !important
+  height: 14px !important
+.category-products__fields-textField .v-input
+  height: 100% !important
+  padding: 0 !important
+  margin: 0 !important
+  font-size: 10px !important
+  padding-top: 2px !important
+.category-products__fields-textField .v-label
+  top: 2px !important
+  font-size: 12px !important
+.category-products__fields-textField .v-label--active
+  top: 14px !important
+.category-products__fields-textField input
+  width: 80px !important
+  font-size: 12px !important
+  padding: 0 !important
+.category-products__fields-textField .v-btn
+  width: 100% !important
+  height: 100% !important
+  background: transparent !important
+.category-products__fields-select
+  height: 32px !important
+  padding-top: 0 !important
+.category-products__fields-select .v-select__selection--comma
+      margin-bottom: 0px !important
+.category-products__fields-select .v-select__slot 
+  height: 20px !important
+  margin-top: 8px !important
+.category-products__fields-select .v-input
+  padding: 0 !important
+  height: 100% !important
+  margin: 0 !important
+.category-products__fields-select .v-label
+  top: 0 !important
+.category-products__fields-select .v-label--active
+  top: 9px !important
+  font-size: 12px !important
+.category-products__fields-select .v-input__icon 
+  height: 12px !important
+.category-products__file-upload
+  position: relative 
+  background: #B9D2EA 
+.category-products__file-upload-type
+  height: 19px !important
+  font-size: 10px !important
+  margin: 2.5px !important
+  padding: 0 !important
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+  &:nth-child(1)
+    margin-right: 0 !important
+.category-products__file-upload-button
+  width: calc(50% - 5px) !important
+  height: 19px !important
+  background-color: #EEEEEE !important
+  border-radius: 4px !important
+  margin: 0 2.5px !important
+  transition: .2s ease
+  i
+    width: 12px !important
+    height: 12px !important
+    font-size: 12px !important
+  &:hover
+    background-color: #CCCCCC !important
+    opacity: .8 !important
+.category-products__file-upload-list
+  max-height: 100px !important
+  padding: 2.5px !important
+  overflow-y: auto !important
+.category-products__file-upload-list::-webkit-scrollbar 
+  width: 4px !important
+.category-products__file-upload-list::-webkit-scrollbar-track 
+  width: 4px !important
+.category-products__file-upload-list::-webkit-scrollbar-thumb 
+  width: 5px !important
+  box-shadow: none !important
+.category-products__file-upload-list .v-list-item
+  min-height: auto !important
+  height: 14px !important
+  padding: 0 2.5px !important
+  margin: 2.5px 0 !important
+.category-products__file-upload-item
+  min-height: auto !important
+  height: 100% !important
+  padding: 0 !important
+  background-color: #eee !important
+  margin-right: 2.5px !important
+  padding-left: 2.5px !important
+  border-radius: 4px !important
+  transition: .2s ease
+  &:hover 
+    background-color: #ccc !important
+.category-products__file-upload-title
+  font-size: 8px !important
+.category-products__file-upload-item-buttons
+  height: 14px !important
+  margin: 0 !important
+  border-radius: 12px !important
+.category-products__file-upload-item-btn
+  height: 100% !important
+  width: 14px !important
+  margin: 0 !important
+  background-color: #eee !important
+  border-radius: 0 !important
+  transition: .2s ease
+  &:hover 
+    background-color: #ccc !important
+  i
+    width: 12px !important
+    height: 12px !important
+    font-size: 12px !important
+.category-products__group-note .v-text-field > .v-input__control > .v-input__slot:after
+  display: none !important
+.category-products__group-note .v-text-field__details
+  display: none !important
+.category-products__group-note .container
+  padding-bottom: 0 !important
+.category-form__categories-wrapper .tree-node.open .tree-node-children::after
+  top: -13px !important
+  left: 13px !important
+  height: 100% !important
+.category-form__categories-wrapper .tree-node.open .tree-node-children .tree-node::after
+  top: 10px !important
+  left: 13px !important
+.category-form__categories-wrapper::-webkit-scrollbar
+  display: none !important
+.category-form__categories-wrapper .category-tree-container
+  margin: 3px 0 !important
+.category-form__categories-wrapper .category-tree-container div
+  font-size: 10px !important
+.category-form__categories-wrapper .category-tree-container span
+  font-size: 8px !important
+.category-form__offer-data
+  height: 100% 
+  overflow-y: scroll 
+  overflow-x: hidden
+.category-form__offer-data::-webkit-scrollbar
+  display: none !important
+.popup-pagination
+  height: 30px !important
+  display: flex !important
+  align-items: center !important
+.pagination-row.popup-pagination
+  border-top: 1px solid #E6E6E6
+  display: flex
+  justify-content: space-between
+  .v-label
+    top: 12px !important
+  .v-input 
+    max-width: 60px
+  .v-text-field__details 
+    display: none
+.popup-pagination 
+  .v-pagination
+    width: 500px !important
+.popup-pagination .v-input__control,
+.popup-pagination .v-input__slot
+  height: 12px !important
+.popup-pagination label
+  font-size: 9px !important
+.popup-pagination input
+  padding: 0 !important
+  text-align: left !important
+.popup-pagination .v-pagination__item,
+.popup-pagination .v-pagination__navigation,
+.popup-pagination .v-pagination__navigation svg
+  min-width: auto !important
+  width: 15px !important
+  height: 15px !important
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+  font-size: 9px !important
+.category-goods 
+  &__breadcrumbs 
+    .v-breadcrumbs li 
+      font-size: 12px !important
+  &__search 
+    .v-input,
+    .v-input__control,
+    .v-input__slot 
+      height: 24px !important
+    .v-input__slot 
+      padding-left: 6px !important
+    .v-input__prepend-inner 
+      margin: 0 !important
+    &-button 
+      height: 24px !important
+      font-size: 12px !important
+      margin-bottom: 0 !important
+      background-color: #117f1b !important
+      transition: .2s ease
+      &:hover 
+        background-color: #117f1b !important
+        opacity: .8
+
+    &-clear 
+      height: 24px !important
+      font-size: 12px !important
+      border: 1px solid #117f1b !important
+  &__categories 
+    width: 350px !important
+    height: calc(100vh - 50px)
+    flex-grow: unset !important
+    flex-basis: unset !important
+    flex-shrink: 0 !important
+    overflow-y: scroll
+    overflow-x: hidden
+    &::-webkit-scrollbar 
+      display: none !important
+    .tree-node-inner-back,
+    .tree-node-inner,
+    .category-tree-container,
+    .category-tree-item,
+    .v-list-item__title,
+    .v-list-item__title div 
+      min-height: unset !important
+      height: 34px !important
+    .v-list-item__title div 
+      display: flex !important
+      align-items: center !important
+      font-size: 13px !important
+    .v-avatar 
+      min-width: unset !important
+      width: 34px !important
+      height: 34px !important
+  &__properties 
+    width: 140px !important
+    height: calc(100vh - 50px)
+    flex-grow: unset !important
+    flex-basis: unset !important
+    flex-shrink: 0 !important
+    overflow-y: scroll
+    overflow-x: hidden
+    .v-item-group 
+      overflow: hidden !important
+    &::-webkit-scrollbar 
+      display: none !important
+  &__content 
+    width: 100% !important
+    height: calc(100vh - 50px)
+    flex-grow: unset !important
+    flex-basis: unset !important
+    overflow-y: scroll
+    overflow-x: hidden
+    &::-webkit-scrollbar 
+      display: none !important
+.category-products__count-select
+  .v-input__control,
+  .v-input__slot,
+  .v-select__slot,
+  .v-input__append-inner,
+  .v-input__icon
+    height: 100% !important
+.category-products__count-select .v-text-field__details
+  display: none !important
+.category-products__count-select .v-input__slot
+  margin-bottom: 0 !important
+.category-products__count-select .v-select__selection
+  max-width: unset !important
+  font-size: 12px !important
+  margin: 0 !important
+.category-products__count-select .v-select__selections
+  display: flex !important
+  justify-content: center !important
+  flex: unset !important
+.category-products__count-select .v-icon__svg
+  width: 21px !important
+  height: 21px !important
+  color: #9e9e9e !important
+.category-products__count-select .v-select__slot
+  display: flex !important
+  justify-content: center !important
+.category-products__count-select .v-select__slot input
+  display: none !important
+.category-products__count-select .v-input__append-inner
+  margin: 0 !important
+  margin-left: 4px !important
+.category-products__count-select .v-input__icon
+  min-width: auto !important
+  width: 6px !important
+.category-products__count-buttons button
+  font-size: 20px !important
+.category-products__count-buttons span
+  padding-bottom: 3px !important
+.offers-products__group .v-data-table__wrapper
+  overflow-y: scroll !important
+.offers-products__group .v-input
+  margin: 0 !important
+.offers-product-group__header-checkbox
+  margin: 0 !important
+  padding: 0 !important
+.offers-product-group__header-checkbox .v-input__slot
+  margin: 0 !important
+.offers-product-group__header-checkbox .v-messages
+  display: none !important
+.offers-product-group__header-id
+  width: 100% !important
+  margin-right: 15px
+.offers-product-group-row
+  max-height: 100px
+.category-groups__items-count 
+  min-width: auto !important
+  width: 16px !important
+  height: 16px !important
+  border-radius: 50% !important
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+  background-color: #2979FF !important
+.documents-count__popup
+  max-width: 350px
+  width: 100%
+.documents-count__item
+  min-height: unset !important
+  height: 20px !important
+.documents-count__content,
+.documents-count__icon
+  height: 20px !important
+  background-color: rgba(97, 97, 97,.05) !important
+  border-radius: 4px !important
+.main-page-pagination
+  border-top: 2px solid #EEEEEE !important
+.main-page-pagination__input .v-input__control,
+.main-page-pagination__input .v-input__slot
+  height: 12px !important
+.main-page-pagination__input .v-label
+  font-size: 9px !important
+.main-page-pagination__input input
+  font-size: 12px !important
+  padding: 0 !important
+.main-page-pagination__wrapper .v-pagination__item,
+.main-page-pagination__wrapper .v-pagination__navigation,
+.main-page-pagination__wrapper .v-pagination__navigation svg
+  min-width: auto !important
+  width: 24px !important
+  height: 24px !important
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+  font-size: 10px !important
+.v-text-field__details
+  display: none !important
+.client-table__inner
+  .v-data-table__wrapper
+    table
+      tbody
+        tr:nth-child(odd)
+          background: #E3F2FD !important
+        tr:nth-child(even)
+          background: #E2FFCF !important
+        tr:nth-child(even):hover
+          background: #d6f7c0 !important
+  
+  
+  
+    
